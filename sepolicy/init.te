@@ -6,6 +6,7 @@ allow init proc_kernel_sched:file rw_file_perms;
 allow init sysfs_mmc_host:file { setattr w_file_perms };
 allow init sysfs_graphics:file { setattr w_file_perms };
 allow init sysfs:file { setattr w_file_perms };
+allow init hal_camera_default:process noatsecure;
 
 #allow init firmware_file:dir { create_dir_perms setattr };
 #allow firmware_file rootfs:filesystem associate;
