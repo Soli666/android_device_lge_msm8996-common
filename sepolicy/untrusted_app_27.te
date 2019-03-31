@@ -26,3 +26,4 @@ allow untrusted_app_27 vold_exec:file { open read };
 
 allow untrusted_app_27 proc_zoneinfo:file { read open getattr };
 allow untrusted_app_27 vendor_camera_prop:file read;
+allow untrusted_app_27 ctl_atfwd_prop:file read;
